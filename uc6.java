@@ -1,8 +1,7 @@
 public class uc6 {
 
     public static void main(String[] args) {
-        // UC6: Array Initialization via Methods
-        // We call the helper methods directly within the array declaration.
+
         String[] bannerLines = {
             getLine(0),
             getLine(1),
@@ -13,16 +12,12 @@ public class uc6 {
             getLine(6)
         };
 
-        // Loop-Based Rendering (Enhanced for-loop)
         for (String line : bannerLines) {
             System.out.println(line);
         }
     }
 
-    /**
-     * Helper method to assemble a specific line index for the full "OOPS" word.
-     * This abstracts the concatenation of O, O, P, and S.
-     */
+
     private static String getLine(int index) {
         return getOPattern()[index] + "  " + 
                getOPattern()[index] + "  " + 
@@ -30,7 +25,7 @@ public class uc6 {
                getSPattern()[index];
     }
 
-    // --- Helper Methods for Character Patterns ---
+
 
     private static String[] getOPattern() {
         return new String[] {
